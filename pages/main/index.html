@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../assets/fonts/fonts.css">
     <title>Document</title>
   </head>
   <body>
     <header>
       <!-- nav start -->
       <nav class="top-nav">
-        <ul>
-          <li>
-            <a href="#"><h1>PetStory Online</h1></a>
+        <ul role="list">
+          <li class="top-logo">
+            <a class="clr-white" href="#"><h1>PetStory online</h1></a>
           </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Map</a></li>
-          <li><a href="#">Zoos</a></li>
-          <li><a href="../donate/index.html">Donate</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a class="clr-white" href="#">About</a></li>
+          <li><a class="clr-white" href="#">Map</a></li>
+          <li><a class="clr-white" href="#">Zoos</a></li>
+          <li><a class="clr-white" href="../donate/index.html">Donate</a></li>
+          <li><a class="clr-white" href="#">Contact us</a></li>
           <li>
-            <a
+            <a class="clr-white"
               href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"
               >Designed by &copy;</a
             >
@@ -31,22 +33,24 @@
     </header>
     <main>
       <section>
-        <img src="../../assets/images/Giant Panda.png" alt="Giant Panda" />
-        <div class="circle"></div>
-        <div class="circle-heading">
-          Watch your <span>favorite</span> animal online
+        <div class="watch-animals">
+          <div class="circle">
+            <div class="circle-heading">Watch your <span class="favorite-span">favorite</span> animal online</div>
+          <button class="watch-btn round-btn">Watch Online</button>
+          </div>
+          
         </div>
-        <button>Watch Online</button>
+        <!-- article start -->
       </section>
-      <div>
-        <article>
+      <article class="article">
           <img src="../../assets/images/bamboo-cap.png" alt="Asian man" />
-          <h2>The Backstage of the Wilderness World.</h2>
+          <div class="article-text">
+          <h2 class="article-heading">The Backstage of the Wilderness World.</h2>
           <p>
             The site was founded on the basis of a volunteer movement to protect
             and care for animals.
           </p>
-          <h3>How it works</h3>
+          <h3 class="article-subheading">How it works</h3>
           <p>
             The main goal is to help the animals, as well as the nature reserves
             and zoos where they are kept. We are currently working on video
@@ -54,94 +58,118 @@
             Angeles, alligators in Florida and gorillas in the Congo. These have
             a total of more than 1,500 mammals and reptiles.
           </p>
-        </article>
-        <img src="../../assets/images/flower_foto1.png" alt="flower" />
-      </div>
+        </div>
+      </article>
+      <img class="flower-right" src="../../assets/images/flower_foto1.png" alt="flower" />
+      <!-- article end -->
 
-      <section>
-        <ul>
-          <li>
+      <!-- animals box start -->
+      <div class="animal-box-wrapper">
+        <div class="arrow-left-container">
+          <div class="arrow-left-circle"><img class="arrow-left" src="../../assets/icons/Vector_left.svg" alt="Arrow Left Icon"></div>
+        </div>
+        <div class="animal-box-inner-wrapper">
+        <section class="animal-box">
+          <!-- giant pandas -->
+          <div class="animal-box-item">
             <img src="../../assets/images/pandas.png" alt="Pandas" />
-            <div>
+            <div class="animal-discription">
+              
               <div>
-                <h4>Giant Pandas</h4>
-                <p>Native to Southwest China</p>
+                <h3 class="animal-name">Giant Pandas</h3>
+                <p class="animal-habitat">Native to Southwest China</p>
+                
               </div>
-              <img
-                src="../../assets/icons/banana-bamboo_icon.png"
-                alt="Banana Icon"
-              />
+              <img src="../../assets/icons/banana-bamboo_icon.png"
+              alt="Banana Icon"/>
+              
             </div>
-          </li>
-          <li>
-            <img src="../../assets/images/eagle.png" alt="Eagle" />
-            <div>
-              <div>
-                <h4>Eagles</h4>
-                <p>Native to South America</p>
-              </div>
-              <img
-                src="../../assets/icons/meet-fish_icon.png"
-                alt="Meat Icon"
-              />
-            </div>
-          </li>
-          <li>
-            <img src="../../assets/images/gorilla.png" alt="Gorilla" />
-            <div>
-              <div>
-                <h4>Gorillas</h4>
-                <p>Native to Congo</p>
-              </div>
-              <img
-                src="../../assets/icons/banana-bamboo_icon.png"
-                alt="Banana Icon"
-              />
-            </div>
-          </li>
-          <li>
-            <img src="../../assets/images/sloth.png" alt="Sloth" />
-            <div>
-              <div>
-                <h4>Two-Woed Sloth</h4>
-                <p>Mesoamerica, South America</p>
-              </div>
-              <img
-                src="../../assets/icons/banana-bamboo_icon.png"
-                alt="Banana Icon"
-              />
-            </div>
-          </li>
-          <li>
-            <img src="../../assets/images/cheetahs.png" alt="Cheetahs" />
-            <div>
-              <div>
-                <h4>Cheetahs</h4>
-                <p>Native to Africa</p>
-              </div>
-              <img
-                src="../../assets/icons/meet-fish_icon.png"
-                alt="Meat Icon"
-              />
-            </div>
-          </li>
-          <li>
-            <img src="../../assets/images/penguin.png" alt="Penguin" />
-            <div>
-              <div>
-                <h4>Penguins</h4>
-                <p>Native to Antarctica</p>
-              </div>
-              <img
-                src="../../assets/icons/meet-fish_icon.png"
-                alt="Meat Icon"
-              />
-            </div>
-          </li>
-        </ul>
-        <button>Choose Your Favorite</button>
-      </section>
+          </div>
 
+          <!-- eagles -->
+          <div class="animal-box-item">
+            <img src="../../assets/images/eagle.png" alt="Eagle" />
+            <div class="animal-discription">
+              <div>
+                <h3 class="animal-name">Eagles</h3>
+                <p class="animal-habitat">Native to South America</p>
+              </div>
+              <img
+              src="../../assets/icons/meet-fish_icon.png"
+              alt="Meat Icon"
+              />
+            </div>
+          </div>
+
+          <!-- gorillas -->
+          <div class="animal-box-item">
+            <img src="../../assets/images/gorilla.png" alt="Gorilla" />
+            <div class="animal-discription">
+              <div>
+                <h3 class="animal-name">Gorillas</h3>
+                <p class="animal-habitat">Native to Congo</p>
+              </div>
+              <img
+                src="../../assets/icons/banana-bamboo_icon.png"
+                alt="Banana Icon"
+              />
+            </div>
+          </div>
+
+          <!-- sloth -->
+          <div class="animal-box-item">
+            <img src="../../assets/images/sloth.png" alt="Sloth" />
+            <div class="animal-discription">
+              <div>
+                <h3 class="animal-name">Two-Woed Sloth</h3>
+                <p class="animal-habitat">Mesoamerica, South America</p>
+              </div>
+              <img
+                src="../../assets/icons/banana-bamboo_icon.png"
+                alt="Banana Icon"
+              />
+            </div>
+          </div>
+
+          <!-- cheetahs -->
+          <div class="animal-box-item">
+            <img src="../../assets/images/cheetahs.png" alt="Cheetahs" />
+            <div class="animal-discription">
+              <div>
+                <h3 class="animal-name">Cheetahs</h3>
+                <p class="animal-habitat">Native to Africa</p>
+              </div>
+              <img
+                src="../../assets/icons/meet-fish_icon.png"
+                alt="Meat Icon"
+              />
+            </div>
+          </div>
+
+          <!-- penguins -->
+          <div class="animal-box-item">
+            <img src="../../assets/images/penguin.png" alt="Penguin" />
+            <div class="animal-discription">
+              <div>
+                <h3 class="animal-name">Penguins</h3>
+                <p class="animal-habitat">Native to Antarctica</p>
+              </div>
+              <img
+                src="../../assets/icons/meet-fish_icon.png"
+                alt="Meat Icon"
+              />
+            </div>
+          </div>
+        </section>
+        <button class="round-btn choose-animal-btn">Choose Your Favorite</button>
+      </div>
+        <div class="arrow-right-container">
+          <div class="arrow-right-circle"><img class="arrow-right" src="../../assets/icons/Vector_right.svg" alt="Arrow Right Icon"></div>
+        </div>
+    </div>
+      <!-- animals box end -->
+      
+      <!-- dotation section -->
       <section>
         <div>
           <h2>Pick and feed a friend</h2>
@@ -184,7 +212,7 @@
         </div>
       </section>
 
-      <!-- Testimonials start -->
+      <!-- testimonials start -->
       <section>
         <h2>Testimonials</h2>
         <ul>
@@ -249,6 +277,7 @@
       </section>
       <!-- Testimonials end -->
     </main>
+
     <footer>
         <div>
             <img src="../../assets/images/logo_footer.png" alt="Pet Story Online Logo">
@@ -271,7 +300,7 @@
         </nav></div>
         <div>
             <form action="">
-                <label for="">Subscribe to our news</label>
+                <label style="display: block;" for="">Subscribe to our news</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email">
                 <input type="submit">
             </form>
