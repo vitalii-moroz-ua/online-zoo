@@ -14,7 +14,7 @@
       <nav class="top-nav">
         <ul role="list">
           <li class="top-logo">
-            <a class="clr-white" href="#"><h1>PetStory online</h1></a>
+            <a class="clr-white" href="#"><h1>PetStory online</h1><img src="../../assets/icons/bamboo.png" alt="Bamboo Icon" class="logo-bamboo-icon"></a>
           </li>
           <li><a class="clr-white" href="#">About</a></li>
           <li><a class="clr-white" href="#">Map</a></li>
@@ -291,38 +291,72 @@
     </main>
 
     <footer>
+      <!-- footer left start-->
       <div class="footer-content">
         <div class="footer-left">
-            <img src="../../assets/images/logo_footer.png" alt="Pet Story Online Logo">
-            <button>Donate For Volunteers</button>
-            <ul>
-                <li><img src="../../assets/icons/social_media_icon_temp.png" alt="Facebook Icon"> <span>Facebook</span></li>
-                <li><img src="../../assets/icons/social_media_icon_temp.png" alt="Twitter Icon"> <span>Twitter</span></li>
-                <li><img src="../../assets/icons/social_media_icon_temp.png" alt="Instagram Icon"> <span>Instagram</span></li>
-                <li><img src="../../assets/icons/social_media_icon_temp.png" alt="YouTube Icon"> <span>YouTube</span></li>
+            <div class="top-logo">
+            <a class="clr-white" href="#"><h1>PetStory online</h1><img src="../../assets/icons/bamboo.png" alt="Bamboo Icon" class="logo-bamboo-icon"></a>
+          </div>
+            <button class="donate-btn rectangular-btn">Donate For Volunteers</button>
+            <ul role="list" class="social-list">
+              <li class="social-item">
+                <div class="social-circle">
+                  <img class="social-icon" src="../../assets/icons/facebook_icon.svg" alt="Facebook Icon">
+                </div> 
+                <a class="social-link clr-white" href="https://www.facebook.com/">Facebook</a>
+              </li>
+              <li class="social-item">
+                <div class="social-circle">
+                  <img class="social-icon" src="../../assets/icons/twitter_icon.svg" alt="Twitter Icon">
+                </div> 
+                <a class="social-link clr-white" href="https://www.twitte.com/">Twitter</a>
+              </li>
+              <li class="social-item">
+                <div class="social-circle">
+                  <img class="social-icon" src="../../assets/icons/instagram_icon.svg" alt="Instagram Icon">
+                </div> 
+                <a class="social-link clr-white" href="https://www.instagram.com/">Instagram</a>
+              </li>
+              <li class="social-item">
+                <div class="social-circle">
+                  <img class="social-icon" src="../../assets/icons/youtube_icon.svg" alt="YouTube Icon">
+                </div> 
+                <a class="social-link clr-white" href="https://www.youtube.com/">Facebook</a>
+              </li>
             </ul>
         </div>
+        <!-- footer left end -->
+
+        <!-- footer center start -->
         <div class="footer-center">
             <nav>
-            <ul>
-                <li>About</li>
-                <li>Map</li>
-                <li>Zoos</li>
-                <li>Contact us</li>
+            <ul class="footer-nav" role="list">
+              <li><a class="footer-nav-item clr-white" href="#">About</a></li>
+            <li><a class="footer-nav-item clr-white" href="#">Map</a></li>
+            <li><a class="footer-nav-item clr-white" href="#">Zoos</a></li>
+            <li><a class="footer-nav-item clr-white" href="#">Contact us</a></li>
             </ul>
         </nav>
         </div>
+        <!-- footer center end -->
+
+        <!-- footer right start -->
         <div class="footer-right">
-            <form action="">
-                <label style="display: block;" for="">Subscribe to our news</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email">
-                <input type="submit">
+          <div class="form-container">
+            <form class="subscribe-form" action="">
+                <label class="form-lable" style="display: block;" for="">Subscribe to our news</label>
+                <input class="form-email" type="email" id="email" name="email" placeholder="Enter your email">
+                <input class="submit-btn" type="submit">
             </form>
-            <div>
-                <p>Designed by Alisa Samborskaya</p>
-                <p>&copy;RSSchool & &copy;Yem Digital <time>2021</time></p>
-            </div>
+          </div>
+            <div class="designer-container">
+              <a href="#" class="designer-link">
+                <p id="designer">Designed by Alisa Samborskaya</p>
+                <p id="entity">&copy;RSSchool & &copy;Yem Digital <time id="year">2021</time></p>
+              </a>
+          </div>
         </div>
+        <!-- footer right end -->
       </div>
     </footer>
   </body>

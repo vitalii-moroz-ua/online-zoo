@@ -125,8 +125,14 @@ body {
   text-align: center;
   font-size: 19px;
   line-height: 26px;
+  position: relative;
 }
 
+.logo-bamboo-icon {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
 .watch-animals {
   background-image: url(../../assets/images/Giant\ Panda.png);
   background-position-y: bottom;
@@ -223,6 +229,7 @@ body {
   height: 426px;
   border-radius: 5px;
   border: 2px solid var(--clr-orange);
+  overflow: hidden;
 }
 
 .animal-name {
@@ -488,14 +495,125 @@ footer {
   margin-top: 180px;
   background-color: #111115;
   height: 443px;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 .footer-content {
   display: flex;
   width: 1160px;
-  margin-top: 40px;
-  margin-bottom: 50px;
   margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column;
+  color: var(--clr-white);
+  height: 100%;
+}
+
+.footer-left {
+  width: 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.social-list {
+  display: grid;
+  gap: 10px;
+}
+.social-item {
+  display: flex;
+  gap: 12px;
+}
+
+.social-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--clr-gray);
+  display: grid;
+  place-items: center;
+}
+
+.social-icon {
+}
+.footer-center {
+  width: 1fr;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-center nav {
+  width: 100%;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-right {
+  width: 1fr;
+  height: 100%;
+  /* padding-bottom: 50px; */
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.form-lable {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-email {
+  border: 1px solid var(--clr-orange);
+  background-color: #111115;
+  border-radius: 3px;
+  width: 228px;
+  height: 42px;
+  padding-left: 10px;
+}
+.form-emal:invalid {
+  border: 1px solid var(--clr-red);
+}
+.submit-btn {
+  width: 129px;
+  height: 42px;
+  color: var(--clr-black-blue);
+  background-color: var(--clr-white);
+  border-radius: 5px;
+  border: 1px solid var(--clr-black-blue);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.submit-btn:active {
+  color: var(--clr-green);
+  border: 1px solid var(--clr-green);
+}
+
+.designer-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+  font-weight: lighter;
+  padding-bottom: 40px;
+}
+.designer-link {
+  margin-bottom: 50px;
+}
+#designer,
+#entity,
+#year {
+  font-weight: 100;
+  color: var(--clr-gray-smoky);
 }
 
 /* ---------------- */
