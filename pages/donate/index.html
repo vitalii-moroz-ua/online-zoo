@@ -4,9 +4,279 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../assets/fonts/fonts.css" />
     <title>Document</title>
   </head>
   <body>
-    Donate page
+    <header>
+      <!-- nav start -->
+      <nav class="top-nav">
+        <ul role="list">
+          <li class="top-logo">
+            <a class="clr-white" href="../main/index.html"
+              ><h1>PetStory online</h1>
+              <img
+                src="../../assets/icons/bamboo.png"
+                alt="Bamboo Icon"
+                class="logo-bamboo-icon"
+            /></a>
+          </li>
+          <li><a class="nav-item clr-white" href="#">Map</a></li>
+          <li><a class="nav-item clr-white" href="#">Zoos</a></li>
+          <li>
+            <a class="nav-item clr-white" href="../main/index.html">About</a>
+          </li>
+          <li>
+            <a class="nav-item clr-white" href="../donate/index.html">Donate</a>
+          </li>
+          <li><a class="nav-item clr-white" href="#">Contact us</a></li>
+          <li>
+            <a
+              class="clr-white"
+              href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"
+              >Designed by &copy;</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- nav end-->
+    </header>
+    <main>
+      <!-- banner start -->
+      <section>
+        <div class="watch-animals"></div>
+      </section>
+      <!-- banner end -->
+
+      <!-- feed friend component start -->
+      <section class="feed-wrapper">
+        <div class="donation-component">
+          <h3 class="donation-heading">
+            THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
+          </h3>
+          <p class="donation-text">
+            Even though the Zoo has been able to reopen, we are at a greatly
+            reduced capacity with educational programs and public and private
+            events cancelled or postponed for additional months. We need you now
+            more than ever to help ensure that we overcome these challenges. We
+            have been actively raising funds in the community, and we are
+            grateful for the generosity. But much more support is still needed,
+            and we need your help! Please consider a gift today – no matter what
+            size – to help us sustain our mission.
+          </p>
+          <h3 class="donation-subheading">Donation Information</h3>
+        </div>
+
+        <div class="feed-component">
+          <div class="feed-inner-component">
+            <h2 class="feed-heading">Pick and feed a friend</h2>
+            <p class="feed-text">
+              We know the animals bring you joy, and in these extraordinary
+              times, we’re glad.
+            </p>
+
+            <div class="panda-diet">
+              <div class="panda-diet-quantity">
+                <p class="diet-num">4</p>
+                <p class="diet-num-discription">Panda diet for the day</p>
+              </div>
+              <div class="cross-icon">
+                <img src="../../assets/icons/x_icon.svg" alt="Cross Icon" />
+              </div>
+              <div class="panda-icon">
+                <img
+                  src="../../assets/icons/animals-widget.svg"
+                  alt="Panda Icon"
+                />
+              </div>
+            </div>
+
+            <h4 class="amount-subheading">Amount</h4>
+            <form class="amount-form" action="">
+              <div class="amount-radiogroup">
+                <div class="radio-line"></div>
+                <div class="radio-item">
+                  <input type="radio" id="5000" name="amount-radio" />
+                  <label id="l1" for="5000">$5000</label>
+                </div>
+
+                <div class="radio-item">
+                  <input type="radio" id="2000" name="amount-radio" />
+                  <label id="l2" for="2000">$2000</label>
+                </div>
+
+                <div class="radio-item">
+                  <input type="radio" id="1000" name="amount-radio" />
+                  <label id="l3" for="1000">$1000</label>
+                </div>
+
+                <div class="radio-item">
+                  <input type="radio" id="500" name="amount-radio" />
+                  <label id="l4" for="500">$500</label>
+                </div>
+
+                <div class="radio-item">
+                  <input type="radio" id="250" name="amount-radio" />
+                  <label id="l5" for="250">$250</label>
+                </div>
+
+                <div class="radio-item">
+                  <input type="radio" id="100" name="amount-radio" />
+                  <label id="l6" for="100">$100</label>
+                </div>
+
+                <div class="radio-item">
+                  <input type="radio" id="50" name="amount-radio" />
+                  <label id="l7" for="50">$50</label>
+                </div>
+
+                <div class="radio-item">
+                  <input type="radio" id="25" name="amount-radio" />
+                  <label id="l8" for="25">$25</label>
+                </div>
+              </div>
+              <!-- radio group end -->
+              <input
+                type="number"
+                id="another-amount"
+                placeholder="Another amount"
+              />
+              <div class="friquency-radiogroup">
+                <input type="radio" name="friquency-radio" id="monthly" />
+                <label for="monthly">Monthly</label>
+                <input type="radio" name="friquency-radio" id="once" />
+                <label for="once">Once</label>
+              </div>
+              <button type="submit" class="round-btn feed-btn">
+                Feed A Friend Now
+              </button>
+              <p class="social-share">
+                Share with your friends on social networks
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- feed friend cmponent end -->
+    </main>
+
+    <footer>
+      <!-- footer left start-->
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="top-logo">
+            <a class="clr-white" href="../main/index.html"
+              ><h2>PetStory online</h2>
+              <img
+                src="../../assets/icons/bamboo.png"
+                alt="Bamboo Icon"
+                class="logo-bamboo-icon"
+            /></a>
+          </div>
+          <button class="donate-btn rectangular-btn">
+            Donate For Volunteers
+          </button>
+          <ul role="list" class="social-list">
+            <li class="social-item">
+              <div class="social-circle">
+                <img
+                  class="social-icon"
+                  src="../../assets/icons/facebook_icon.svg"
+                  alt="Facebook Icon"
+                />
+              </div>
+              <a class="social-link clr-white" href="https://www.facebook.com/"
+                >Facebook</a
+              >
+            </li>
+            <li class="social-item">
+              <div class="social-circle">
+                <img
+                  class="social-icon"
+                  src="../../assets/icons/twitter_icon.svg"
+                  alt="Twitter Icon"
+                />
+              </div>
+              <a class="social-link clr-white" href="https://www.twitte.com/"
+                >Twitter</a
+              >
+            </li>
+            <li class="social-item">
+              <div class="social-circle">
+                <img
+                  class="social-icon"
+                  src="../../assets/icons/instagram_icon.svg"
+                  alt="Instagram Icon"
+                />
+              </div>
+              <a class="social-link clr-white" href="https://www.instagram.com/"
+                >Instagram</a
+              >
+            </li>
+            <li class="social-item">
+              <div class="social-circle">
+                <img
+                  class="social-icon"
+                  src="../../assets/icons/youtube_icon.svg"
+                  alt="YouTube Icon"
+                />
+              </div>
+              <a class="social-link clr-white" href="https://www.youtube.com/"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- footer left end -->
+
+        <!-- footer center start -->
+        <div class="footer-center">
+          <nav>
+            <ul class="footer-nav" role="list">
+              <li>
+                <a class="nav-item clr-white" href="../main/index.html"
+                  >About</a
+                >
+              </li>
+              <li><a class="nav-item clr-white" href="#">Map</a></li>
+              <li><a class="nav-item clr-white" href="#">Zoos</a></li>
+              <li>
+                <a class="nav-item clr-white" href="#">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- footer center end -->
+
+        <!-- footer right start -->
+        <div class="footer-right">
+          <div class="form-container">
+            <form class="subscribe-form" action="">
+              <label class="form-lable" style="display: block" for="email"
+                >Subscribe to our news</label
+              >
+              <input
+                class="form-email"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+              <input class="submit-btn" type="submit" />
+            </form>
+          </div>
+          <div class="designer-container">
+            <a href="#" class="designer-link">
+              <p id="designer">Designed by Alisa Samborskaya</p>
+              <p id="entity">
+                &copy;RSSchool & &copy;Yem Digital <time id="year">2021</time>
+              </p>
+            </a>
+          </div>
+        </div>
+        <!-- footer right end -->
+      </div>
+    </footer>
   </body>
 </html>

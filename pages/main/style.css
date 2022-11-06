@@ -117,6 +117,10 @@ body {
   margin-left: auto;
 }
 
+.nav-item:hover {
+  color: var(--clr-orange);
+}
+
 .top-logo {
   border: 1px solid var(--clr-white);
   width: 82px;
@@ -232,6 +236,11 @@ body {
   overflow: hidden;
 }
 
+.animal-box-item:hover {
+  box-shadow: 0 3px 10px rgba(127, 83, 2, 0.43);
+  cursor: pointer;
+}
+
 .animal-name {
   text-transform: uppercase;
   color: var(--clr-black);
@@ -292,6 +301,32 @@ body {
 .rectangular-btn:active {
   cursor: pointer;
   background-color: var(--clr-green);
+}
+
+/* aside photos of plants*/
+.palm {
+  width: 298px;
+  height: 460px;
+  position: absolute;
+  top: 2150px;
+  left: 0;
+}
+.palm img {
+  width: 100%;
+  height: 100%;
+}
+
+.strelitzia {
+  width: 368px;
+  height: 275px;
+  position: absolute;
+  top: 2334px;
+  right: 0;
+}
+
+.strelitzia-photo {
+  width: 100%;
+  height: 100%;
 }
 
 /* feed a friend component */
@@ -490,6 +525,20 @@ time {
   margin-right: auto;
 }
 
+/* aside plant photo */
+.leav {
+  width: 247px;
+  height: 408px;
+  position: absolute;
+  top: 4208px;
+  right: 0;
+}
+
+.leav img {
+  width: 100%;
+  height: 100%;
+}
+
 /* footer */
 footer {
   margin-top: 180px;
@@ -536,8 +585,6 @@ footer {
   place-items: center;
 }
 
-.social-icon {
-}
 .footer-center {
   width: 1fr;
   display: flex;
@@ -557,7 +604,7 @@ footer {
 .footer-right {
   width: 1fr;
   height: 100%;
-  /* padding-bottom: 50px; */
+  padding-bottom: 50px;
 }
 
 .form-container {
@@ -568,7 +615,6 @@ footer {
 
 .form-lable {
   font-size: 24px;
-  margin-bottom: 10px;
 }
 
 .form-email {
@@ -606,9 +652,7 @@ footer {
   font-weight: lighter;
   padding-bottom: 40px;
 }
-.designer-link {
-  margin-bottom: 50px;
-}
+
 #designer,
 #entity,
 #year {
